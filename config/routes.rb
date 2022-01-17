@@ -3,4 +3,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  get "/home" => "parameters#query"
+
+  get "/home/:wildcard" => "parameters#query"
+
+  post "/home" => "parameters#query"
 end
